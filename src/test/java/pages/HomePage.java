@@ -15,7 +15,7 @@ public class HomePage extends DriverSetup{
 
     @Test
     public void titleUrl(){
-        driver.get("https://www.demoblaze.com/index.html");
+        //driver.get("https://www.demoblaze.com/index.html");
 
         Assert.assertEquals(driver.getTitle(),"STORE"); //PRODUCT STORE
         Assert.assertEquals(driver.getCurrentUrl(),"https://www.demoblaze.com/index.html");
@@ -45,9 +45,9 @@ public class HomePage extends DriverSetup{
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://www.demoblaze.com/index.html");
         driver.navigate().back();
-        //Thread.sleep(2000);
+        Thread.sleep(2000);
         driver.navigate().forward();
-        //Thread.sleep(2000);
+        Thread.sleep(2000);
 
         WebElement contact = driver.findElement(By.xpath("//a[normalize-space()='Contact']"));
         contact.click();

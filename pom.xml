@@ -7,7 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Batch19_Web_Automation_Project_POM</name>
+  <name>Web_Automation_DemoBlaze</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -53,7 +53,7 @@
         <configuration>
           <suiteXmlFiles>
             <!--suppress UnresolvedMavenProperty -->
-            <suiteXmlFile>${xmlFileName}</suiteXmlFile>
+            <suiteXmlFile>suite.xml</suiteXmlFile>
             <!--          <suiteXmlFile>testng.xml</suiteXmlFile>-->
           </suiteXmlFiles>
           <!--        <includes>-->
